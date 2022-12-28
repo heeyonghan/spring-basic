@@ -27,7 +27,7 @@ public class ApplicationContextBasicTest {
 
     @Test
     void validBeanByName() {
-        MemberService memberService = ac.getBean("noName",MemberService.class);
+//        MemberService memberService = ac.getBean("noName",MemberService.class);
         org.junit.jupiter.api.Assertions.assertThrows(NoSuchBeanDefinitionException.class,
                 () -> ac.getBean("noName", MemberServiceImpl.class));
     }
