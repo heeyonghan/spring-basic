@@ -21,7 +21,7 @@ public class OrderServiceImpl implements OrderService {
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
 
-<<<<<<< HEAD
+
 //    @Autowired // 의존관계 필드 주입
 //    private MemberRepository memberRepository;
 
@@ -32,10 +32,9 @@ public class OrderServiceImpl implements OrderService {
 
 
 
-    @Autowired
-=======
+
+
     @Autowired // Lombok 라이브러리 적용으로 스킵 가능.
->>>>>>> e42bfc481af8e4c87f5e4878b74ccf11ab2d0a4c
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
